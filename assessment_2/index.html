@@ -5,59 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./global.css">
-    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
-
-
     <link href="./assets/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
-
     <link href="./assets/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
     <link href="./assets/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
-<body class="noMargin" style="overflow-y:scroll; overflow-x:hidden;" >
+<body class="noMargin" style="overflow-y:scroll; overflow-x:hidden;">
+    
     <div class="header">
-        <div class="navBar flaxRow">
+        <div class="navBar flaxRow ">
             <div class="flaxRow">
-                <div class="menuButton"> <img height="25px" width="25px" src="./assets/icons/menu-burger.png" /> </div>
+                <div class="menuButton"> <i class="fa-sharp fa-regular fa-bars fa-lg" style="color: #0e5aa7;"></i></div>
                 <div class="navBarLogo"> <img height="30px" width="30px" src="./assets/image/logo.png" /></div>
             </div>
             <div class="flaxRow">
-                <div class="circleUser"> <img src="./assets/icons/circle-user.png" height="25px" width="25px" /> </div>
+                <!-- <i class="fa-thin fa-circle-user" style="color: #0e5aa7;" ></i> -->
+                <div class="circleUser">
+                    <i class="fa-regular fa-circle-user fa-xl " style="color: #0e5aa7;"></i>
+                </div>
                 <div class="countryLogo"> <img src="./assets/image/AE.avif" height="18px" width="25px" /> </div>
-                <div class="shoppingCart"> <img src="./assets/icons/shopping-cart.png" height="25px" width="25px" />
+                <div class="shoppingCart">
+                    <i class="fa-regular fa-cart-shopping fa-lg" style="color: #0e5aa7;"></i>
                 </div>
-            </div>
-        </div>
-        <nav>
-            <div>
-                <div>
-                    <div class="searchBox flaxRow ">
-                        <!-- <span class="fa fa-search form-control-feedback"></span> -->
-                        <input type="text" class="searchInput" placeholder="Search">
-                        <div class="noBackground serachIcon"> <img class="noBackground" height="17px" width="17px"
-                                src="./assets/icons/cross.svg" /> </div>
-                        <div class="noBackground serachIcon"> <img class="noBackground" height="17px" width="17px"
-                                src="./assets/icons/search.svg" /></div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <div class="flaxRow deliverOuterbox">
-            <div class="flaxRow">
-                <div>
-                    <img src="./assets/icons/marker.svg" height="25px" width="25px" />
-                </div>
-                <div class="deliverTextArea">
-                    <b>Deliver to </b>Dubai Festival city
-                </div>
-            </div>
-            <div>
-                <b>Change</b>
             </div>
         </div>
     </div>
+
+        <div class="sticky">
+            <div  class="searchBox flaxRow ">
+            <!-- <span class="fa fa-search form-control-feedback"></span> -->
+            <input type="text" class="searchInput" placeholder="Search">
+            <div class="noBackground serachIcon">
+                <i class="fa-sharp fa-regular fa-xmark fa-lg noBackground" style="color:  #7c7c7c;"></i>
+            </div>
+            <div class="noBackground serachIcon">
+                <i class="fa-solid fa-magnifying-glass noBackground" style="color:  #7c7c7c;"></i>
+
+            </div>
+        </div>
+        </div>
+
+
+
+
+        <div class="flaxRow deliverOuterbox header">
+            <div class="flaxRow">
+                <div>
+                    <i class="fa-sharp fa-regular fa-location-dot"></i>
+                    <!-- <img src="./assets/icons/marker.svg" height="25px" width="25px" /> -->
+                </div>
+                <div class="deliverTextArea">
+                    <span class="boldText">Deliver to:</span> <span class="normalText">Dubai Festival city </span>
+
+                </div>
+            </div>
+            <div>
+                <span class="boldText">Change</span>
+            </div>
+        </div>
+    
 
     <div class="mainContent">
         <!-- <div class=" shopType">
@@ -94,7 +101,7 @@
 
 
                     <div class="ShopCategorybox">
-                        <div class="CategoryboxText">
+                        <div class="CategoryboxText ">
                             Fashion accessories & luqqae
                         </div>
                     </div>
@@ -102,7 +109,7 @@
                 <div class="boxMargin">
 
                     <div class="ShopCategorybox">
-                        <div class="CategoryboxText">
+                        <div class="CategoryboxText ">
                             Home
                         </div>
                     </div>
@@ -111,7 +118,7 @@
 
 
                     <div class="ShopCategorybox">
-                        <div class="CategoryboxText">
+                        <div class="CategoryboxText ">
                             Garden
                         </div>
                     </div>
@@ -119,7 +126,7 @@
                 <div class="boxMargin">
 
                     <div class="ShopCategorybox">
-                        <div class="CategoryboxText">
+                        <div class="CategoryboxText ">
                             SmartPhone
                         </div>
                     </div>
@@ -134,31 +141,34 @@
             <div class="product">
                 <div class="productBackground">
                     <div class="productTop"></div>
-                    <div class="productImage">
-                        <img src="./assets/image/1901653_main.jpg" height="auto" width="100%" />
-            
+                    <div class="productImageBox">
+                        <a class="productImageBoxLink">
+
+                        
+                        <img src="./assets/image/1901653_main.jpg"  class="productImage"/>
+                    </a>
                     </div>
-               <div  class="productDesc">
+                    <div class="productDesc">
 
 
-                    <div class="productTitle">
-                        Apple iPhone 14 128GB 5G Midnight
-                    </div>
-                    <div class="productSubTitle flaxRow">
-                        <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
-                        <div> Fulfilled by Carrfore </div>
+                        <div class="productTitle">
+                            Apple iPhone 14 128GB 5G Midnight
+                        </div>
+                        <div class="productSubTitle flaxRow">
+                            <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
+                            <div class="productSubTitleText"> Fulfilled by Carrfore </div>
 
+                        </div>
+                        <div class="productPrice">
+                            <b>AED <span> 2974.00/piece</span></b>
+                        </div>
                     </div>
-                    <div class="productPrice"> 
-                        <b>AED <span> 2974.00 / piece</span></b>
-                    </div>
-                </div>
                     <div class="productCart">
                         <div>
                             <div class="productCartIcon">
-                                <i class="fa-solid fa-plus fa-lg"  style="color: #ffffff; background-color: red;" ></i>
+                                <i class="fa-solid fa-plus fa-lg" style="color: #ffffff; background-color: red;"></i>
                             </div>
-                           
+
                         </div>
 
 
@@ -173,31 +183,76 @@
             <div class="product">
                 <div class="productBackground">
                     <div class="productTop"></div>
-                    <div class="productImage">
-                        <img src="./assets/image/1901653_main.jpg" height="auto" width="100%" />
-            
+                    <div class="productImageBox">
+                        <a class="productImageBoxLink">
+
+                        
+                        <img src="./assets/image/1901657_main.jpg"  class="productImage"/>
+                    </a>
                     </div>
-               <div  class="productDesc">
+                    <div class="productDesc">
 
 
-                    <div class="productTitle">
-                        Apple iPhone 14 128GB 5G Midnight
-                    </div>
-                    <div class="productSubTitle flaxRow">
-                        <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
-                        <div> Fulfilled by Carrfore </div>
+                        <div class="productTitle">
+                            Apple iPhone 14 128GB 5G Midnight
+                        </div>
+                        <div class="productSubTitle flaxRow">
+                            <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
+                            <div class="productSubTitleText"> Fulfilled by Carrfore </div>
 
+                        </div>
+                        <div class="productPrice">
+                            <b>AED <span> 2974.00/piece</span></b>
+                        </div>
                     </div>
-                    <div class="productPrice"> 
-                        <b>AED <span> 2974.00 / piece</span></b>
-                    </div>
-                </div>
                     <div class="productCart">
                         <div>
                             <div class="productCartIcon">
-                                <i class="fa-solid fa-plus fa-lg"  style="color: #ffffff; background-color: red;" ></i>
+                                <i class="fa-solid fa-plus fa-lg" style="color: #ffffff; background-color: red;"></i>
                             </div>
-                           
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+           
+            <div class="product">
+                <div class="productBackground">
+                    <div class="productTop"></div>
+                    <div class="productImageBox">
+                        <a class="productImageBoxLink">
+
+                        
+                        <img src="./assets/image/1901659_main.jpg"  class="productImage"/>
+                    </a>
+                    </div>
+                    <div class="productDesc">
+
+
+                        <div class="productTitle">
+                            Apple iPhone 14 128GB 5G Midnight
+                        </div>
+                        <div class="productSubTitle flaxRow">
+                            <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
+                            <div class="productSubTitleText"> Fulfilled by Carrfore </div>
+
+                        </div>
+                        <div class="productPrice">
+                            <b>AED <span> 2974.00/piece</span></b>
+                        </div>
+                    </div>
+                    <div class="productCart">
+                        <div>
+                            <div class="productCartIcon">
+                                <i class="fa-solid fa-plus fa-lg" style="color: #ffffff; background-color: red;"></i>
+                            </div>
+
                         </div>
 
 
@@ -212,31 +267,34 @@
             <div class="product">
                 <div class="productBackground">
                     <div class="productTop"></div>
-                    <div class="productImage">
-                        <img src="./assets/image/1901653_main.jpg" height="auto" width="100%" />
-            
+                    <div class="productImageBox">
+                        <a class="productImageBoxLink">
+
+                        
+                        <img src="./assets/image/1901687_main.jpg"  class="productImage"/>
+                    </a>
                     </div>
-               <div  class="productDesc">
+                    <div class="productDesc">
 
 
-                    <div class="productTitle">
-                        Apple iPhone 14 128GB 5G Midnight
-                    </div>
-                    <div class="productSubTitle flaxRow">
-                        <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
-                        <div> Fulfilled by Carrfore </div>
+                        <div class="productTitle">
+                            Apple iPhone 14 128GB 5G Midnight
+                        </div>
+                        <div class="productSubTitle flaxRow">
+                            <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
+                            <div class="productSubTitleText"> Fulfilled by Carrfore </div>
 
+                        </div>
+                        <div class="productPrice">
+                            <b>AED <span> 2974.00/piece</span></b>
+                        </div>
                     </div>
-                    <div class="productPrice"> 
-                        <b>AED <span> 2974.00 / piece</span></b>
-                    </div>
-                </div>
                     <div class="productCart">
                         <div>
                             <div class="productCartIcon">
-                                <i class="fa-solid fa-plus fa-lg"  style="color: #ffffff; background-color: red;" ></i>
+                                <i class="fa-solid fa-plus fa-lg" style="color: #ffffff; background-color: red;"></i>
                             </div>
-                           
+
                         </div>
 
 
@@ -251,71 +309,34 @@
             <div class="product">
                 <div class="productBackground">
                     <div class="productTop"></div>
-                    <div class="productImage">
-                        <img src="./assets/image/1901653_main.jpg" height="auto" width="100%" />
-            
+                    <div class="productImageBox">
+                        <a class="productImageBoxLink">
+
+                        
+                        <img src="./assets/image/1901653_main.jpg"  class="productImage"/>
+                    </a>
                     </div>
-               <div  class="productDesc">
+                    <div class="productDesc">
 
 
-                    <div class="productTitle">
-                        Apple iPhone 14 128GB 5G Midnight
-                    </div>
-                    <div class="productSubTitle flaxRow">
-                        <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
-                        <div> Fulfilled by Carrfore </div>
-
-                    </div>
-                    <div class="productPrice"> 
-                        <b>AED <span> 2974.00 / piece</span></b>
-                    </div>
-                </div>
-                    <div class="productCart">
-                        <div>
-                            <div class="productCartIcon">
-                                <i class="fa-solid fa-plus fa-lg"  style="color: #ffffff; background-color: red;" ></i>
-                            </div>
-                           
+                        <div class="productTitle">
+                            Apple iPhone 14 128GB 5G Midnight
                         </div>
+                        <div class="productSubTitle flaxRow">
+                            <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
+                            <div class="productSubTitleText"> Fulfilled by Carrfore </div>
 
-
+                        </div>
+                        <div class="productPrice">
+                            <b>AED <span> 2974.00/piece</span></b>
+                        </div>
                     </div>
-
-
-                </div>
-
-
-            </div>
-
-
-            <div class="product">
-                <div class="productBackground">
-                    <div class="productTop"></div>
-                    <div class="productImage">
-                        <img src="./assets/image/1901653_main.jpg" height="auto" width="100%" />
-            
-                    </div>
-               <div  class="productDesc">
-
-
-                    <div class="productTitle">
-                        Apple iPhone 14 128GB 5G Midnight
-                    </div>
-                    <div class="productSubTitle flaxRow">
-                        <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
-                        <div> Fulfilled by Carrfore </div>
-
-                    </div>
-                    <div class="productPrice"> 
-                        <b>AED <span> 2974.00 / piece</span></b>
-                    </div>
-                </div>
                     <div class="productCart">
                         <div>
                             <div class="productCartIcon">
-                                <i class="fa-solid fa-plus fa-lg"  style="color: #ffffff; background-color: red;" ></i>
+                                <i class="fa-solid fa-plus fa-lg" style="color: #ffffff; background-color: red;"></i>
                             </div>
-                           
+
                         </div>
 
 
@@ -330,31 +351,34 @@
             <div class="product">
                 <div class="productBackground">
                     <div class="productTop"></div>
-                    <div class="productImage">
-                        <img src="./assets/image/1901653_main.jpg" height="auto" width="100%" />
-            
+                    <div class="productImageBox">
+                        <a class="productImageBoxLink">
+
+                        
+                        <img src="./assets/image/1901653_main.jpg"  class="productImage"/>
+                    </a>
                     </div>
-               <div  class="productDesc">
+                    <div class="productDesc">
 
 
-                    <div class="productTitle">
-                        Apple iPhone 14 128GB 5G Midnight
-                    </div>
-                    <div class="productSubTitle flaxRow">
-                        <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
-                        <div> Fulfilled by Carrfore </div>
+                        <div class="productTitle">
+                            Apple iPhone 14 128GB 5G Midnight
+                        </div>
+                        <div class="productSubTitle flaxRow">
+                            <div><i class="fa-solid fa-certificate" style="color: #0e5aa7;"></i></div>
+                            <div class="productSubTitleText"> Fulfilled by Carrfore </div>
 
+                        </div>
+                        <div class="productPrice">
+                            <b>AED <span> 2974.00/piece</span></b>
+                        </div>
                     </div>
-                    <div class="productPrice"> 
-                        <b>AED <span> 2974.00 / piece</span></b>
-                    </div>
-                </div>
                     <div class="productCart">
                         <div>
                             <div class="productCartIcon">
-                                <i class="fa-solid fa-plus fa-lg"  style="color: #ffffff; background-color: red;" ></i>
+                                <i class="fa-solid fa-plus fa-lg" style="color: #ffffff; background-color: red;"></i>
                             </div>
-                           
+
                         </div>
 
 
@@ -370,7 +394,7 @@
 
 
 
-    
+
         </div>
 
 
