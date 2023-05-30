@@ -1,0 +1,159 @@
+.navBar{
+   height: 56px; 
+   justify-content:space-between; 
+}
+
+.flaxRow{
+    display: flex; 
+    flex-direction: row; 
+    align-items: center;
+}
+
+.icon {
+    height :35px;
+     width :35px ;
+     color: red; 
+      
+}
+
+.menuButton{
+    padding-right: 16px;
+}
+
+.noCssList{
+    display: flex; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.iteamLeft{
+  
+    justify-self:left;
+}
+
+.iteamRight{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+
+*{
+    background-color: #ffffff;
+}
+
+.header{
+    padding: 8px 16px 8px 16px ;
+}
+
+.navBarLogo{
+    height: 35px;
+    width: 35px;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+}
+
+.shoppingCart{
+    margin-left: 16px;
+}
+
+.countryLogo {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.circleUser{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.noMargin{
+    margin: 0;
+    padding: 0;
+}
+
+.searchBox{
+ justify-content: baseline;
+  background-color: #F5F5F5; 
+  border-radius: 40px; 
+}
+
+.searchInput{
+    min-width: 0;
+    border: 0;
+    outline: none;
+    margin: 0;
+    padding: 11px 20px;
+    vertical-align: middle;
+    width: 100%;
+    background: transparent; 
+    font-size: 12px;
+    color: #0E5AA7;
+    /* height: 40px; */
+    line-height: 26px;
+}
+
+.noBackground {
+    background: transparent; 
+}
+
+.serachIcon{
+    padding-top: 4px;
+    padding-right: 16px;
+}
+
+.serachCancel{
+    padding-right: 16px;
+}
+
+.deliverOuterbox {
+    justify-content: space-between;
+    padding-top: 10px ;
+}
+
+.deliverTextArea{
+    margin-left: 16px;
+}
+
+
+.mainContent{
+    background-color: #F5F5F5; 
+    margin-top: 16px;
+    padding: 10px  16px 10px 16px ;
+}
+
+.mainContent div {
+    background: transparent; 
+}
+
+.ShopCategory {
+    margin-top: 24px;
+}
+
+.categoryBox .ShopCategorybox {
+    background-color:  #ffffff; 
+    margin: 2px; 
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+}
+
+.CategoryboxText{
+    padding: 2px 5px 2px 5px ;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.categoryBox{
+    overflow-x: scroll;
+ }
+ 
+ .boxMargin {
+    margin-right: 5px;
+ }
+
+ .categoryTitle{
+    margin-bottom: 10px;
+ }
