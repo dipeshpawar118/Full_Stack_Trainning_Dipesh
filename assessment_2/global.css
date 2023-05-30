@@ -371,6 +371,13 @@ body {
 
     }
 
+    .navBarDesktop{
+        position: sticky;
+        top: 0;
+        padding-top: 6px;
+        padding-bottom: 6px ;
+    }
+
     .navBarLogoDesktop {
         display: block;
         width: 105px;
@@ -409,7 +416,7 @@ body {
 
     .sideContent {
         display: flex;
-        width: 30%;
+        width: 35%;
         background-color: #ffffff;
         margin-top: 20px;
 
