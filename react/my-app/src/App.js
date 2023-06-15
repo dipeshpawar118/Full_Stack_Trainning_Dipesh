@@ -7,12 +7,19 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
+import SerachCard from './serachCard';
+import LocationCard from './locationCard';
+import SideContent from './sideContent';
+import MainContent from './mianContent';
 
 function App() {
   return (
     <div className="App">
 
      <NavigationBar />
+     <SerachCard />
+     <LocationCard />
+     
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -27,6 +34,13 @@ function App() {
           Learn React
         </a>
       </header> */}
+
+<div className="main-contener">
+  <SideContent/>
+  <MainContent/>
+
+</div>
+
     </div>
   );
 }
