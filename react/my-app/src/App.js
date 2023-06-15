@@ -12,6 +12,13 @@ import SideContent from './sideContent';
 import MainContent from './mianContent';
 
 function App() {
+
+
+  function addedTocart(id){
+    console.log(id);
+
+}
+    
   return (
     <div className="App">
 
@@ -36,7 +43,7 @@ function App() {
 
 <div className="main-contener">
   <SideContent/>
-  <MainContent/>
+  <MainContent  AddedToCart={addedTocart} />
 
 </div>
 

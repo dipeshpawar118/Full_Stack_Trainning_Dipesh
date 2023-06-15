@@ -65,7 +65,7 @@ const NavigationBar = () => {
                     <div className="country-logo">
                         <img src={AeLogo} style={{ height: "18px", width: "25px" }} /> </div>
                     <div className="shopping-cart-logo">
-                        <div className="addToCart">1</div>
+                        {/* <div className="addToCart">1</div> */}
                         <FontAwesomeIcon icon={faCartShopping} size="lg" style={{color: "#0e5aa7"}}  />
                         {/* <i className="fa-regular fa-cart-shopping fa-lg" style="color: #0e5aa7;"></i>  */}
                     </div>

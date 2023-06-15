@@ -16,14 +16,19 @@ let products = [
     { title :  " Apple iPhone 14 128GB 5G Midnight" , price : "2974.00/piece" , img : iphoneImage},
 ]
 
-const ProductsList = () => {
+const ProductsList = (props) => {
+
+function addedTocart(id){
+console.log(id);
+props.AddedToCart(id);
+}
 
     return (
         <div className="product-card-list">
 
-            {products.map((product)=>{
+            {products.map((product , index )=>{
                 return (
-                    <div className="product-card">
+                    <div className="product-card" key={index}>
                     <div className="product-card-background">
                         <div className="product-card-section-top"></div>
                         <div className="product-card-section-middle">
@@ -46,8 +51,8 @@ const ProductsList = () => {
                                 <b>AED <span> {product.price}</span></b>
                             </div>
                         </div>
-                        <div className="product-addCart">
-                                <div className="product-addCart-icon">
+                        <div className="product-addCart" >
+                                <div className="product-addCart-icon" onClick={()=>{addedTocart(index)}}>
                                 <FontAwesomeIcon icon={faPlus} size="lg"  style={{color: "#ffffff" , backgroundColor: "red"}} />
                                     {/* <i className="fa-solid fa-plus fa-lg"   style={{color: "#ffffff" , backgroundColor: "red"}}></i> */}
                                 </div>
