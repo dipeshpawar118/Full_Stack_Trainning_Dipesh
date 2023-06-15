@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+const element = <FontAwesomeIcon icon={faEnvelope} />
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

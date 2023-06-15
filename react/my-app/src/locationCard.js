@@ -2,6 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './App.css';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 const  LocationCard = ()=>{
 
@@ -9,6 +10,7 @@ const  LocationCard = ()=>{
         <div class="flaxRow location-card header">
         <div class="flaxRow">
             <div>
+            <FontAwesomeIcon icon={faLocationDot}  />
                 {/* <i class="fa-sharp fa-regular fa-location-dot"></i> */}
              
             </div>

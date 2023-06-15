@@ -1,6 +1,7 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import iphoneImage from "./assets/image/1901653_main.jpg"
+import { faCertificate,  faPlus } from '@fortawesome/free-solid-svg-icons'
 
 import './App.css';
 
@@ -35,7 +36,10 @@ const ProductsList = () => {
                             {product.title}
                             </div>
                             <div className="product-subTitle flaxRow">
-                                <div><i className="fa-solid fa-certificate" style={{color: "#0e5aa7;"}}></i></div>
+                                <div>
+                                    {/* <i className="fa-solid fa-certificate" style={{color: "#0e5aa7;"}}></i> */}
+                                    <FontAwesomeIcon icon={faCertificate} style={{color: "#0e5aa7"}} />
+                                    </div>
                                 <div className="product-subTitle-text"> Fulfilled by Carrfore </div>
                             </div>
                             <div className="product-price">
@@ -44,8 +48,8 @@ const ProductsList = () => {
                         </div>
                         <div className="product-addCart">
                                 <div className="product-addCart-icon">
-                                    <i className="fa-solid fa-plus fa-lg" 
-                                        style={{color: "#ffffff" , backgroundColor: "red"}}></i>
+                                <FontAwesomeIcon icon={faPlus} size="lg"  style={{color: "#ffffff" , backgroundColor: "red"}} />
+                                    {/* <i className="fa-solid fa-plus fa-lg"   style={{color: "#ffffff" , backgroundColor: "red"}}></i> */}
                                 </div>
                         </div>
                     </div>
