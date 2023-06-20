@@ -6,7 +6,7 @@ import AeLogo from "./assets/image/AE.avif"
 import './App.css';
 import { faBars, faCartShopping, faCircleUser, faLocationDot, faMagnifyingGlass, faPlus, faXmark } from '@fortawesome/free-solid-svg-icons'
 
-const NavigationBar = () => {
+const NavigationBar = (props) => {
 
     return (
         <div className="header navBar-screen3">
@@ -65,7 +65,7 @@ const NavigationBar = () => {
                     <div className="country-logo">
                         <img src={AeLogo} style={{ height: "18px", width: "25px" }} /> </div>
                     <div className="shopping-cart-logo">
-                        {/* <div className="addToCart">1</div> */}
+                      { ( props.product.length > 0 ) &&  <div className="addToCart">{props.product.length }</div> } 
                         <FontAwesomeIcon icon={faCartShopping} size="lg" style={{color: "#0e5aa7"}}  />
                         {/* <i className="fa-regular fa-cart-shopping fa-lg" style="color: #0e5aa7;"></i>  */}
                     </div>

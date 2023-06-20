@@ -10,22 +10,48 @@ import SerachCard from './serachCard';
 import LocationCard from './locationCard';
 import SideContent from './sideContent';
 import MainContent from './mianContent';
-
+import { useCallback, useState } from 'react';
+import Cart from './cart';
+let hashSet = new Set();
 function App() {
 
-
-  function addedTocart(id){
+  const [product, setProduct] = useState([])
+  function addedTocart(id) {
     console.log(id);
+  }
 
-}
-    
+  const AddedToCart = useCallback((product) => {
+    if (hashSet.has(product.id)) {
+      setProduct(((t) => [...t, product]))
+      hashSet.delete(product.id)
+    } else {
+      setProduct(((t) => [...t, product]))
+
+      hashSet.add(product.id)
+    }
+  }, [product]);
+
   return (
     <div className="App">
 
-     <NavigationBar />
-     <SerachCard />
-     <LocationCard />
-     
+      <NavigationBar product={product} />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={  
+           <div className="main-contener">
+        <SideContent />
+        <MainContent AddedToCart={AddedToCart} />
+       
+      </div>}>
+          
+          <Route path="cart" element={ <Cart cart={product} />} />
+          
+        </Route>
+      </Routes>
+    </BrowserRouter>
+      <SerachCard />
+      <LocationCard />
+
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -41,12 +67,7 @@ function App() {
         </a>
       </header> */}
 
-<div className="main-contener">
-  <SideContent/>
-  <MainContent  AddedToCart={addedTocart} />
-
-</div>
-
+   
     </div>
   );
 }

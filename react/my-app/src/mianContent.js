@@ -7,9 +7,8 @@ import ProductsList from './products';
 
 const  MainContent = (props)=>{
 
-    function addedTocart(id){
-        console.log(id);
-        props.AddedToCart(id)
+    function addedTocart(product){
+        props.AddedToCart(product)
     }
         
 
@@ -22,4 +21,4 @@ const  MainContent = (props)=>{
 
 }
 
-export default MainContent;
+export default  React.memo(MainContent);
